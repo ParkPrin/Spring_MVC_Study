@@ -30,7 +30,7 @@ public class MemberSaveServlet extends HttpServlet {
 
         Member member = new Member(username, age);
         System.out.println("member = " + member);
-        memberReponsitory.save(member);
+        member = memberReponsitory.save(member);
 
         response.setContentType("text/html");
         response.setCharacterEncoding("utf-8");
